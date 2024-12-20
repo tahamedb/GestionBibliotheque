@@ -17,11 +17,12 @@ public class Borrow {
         this.borrowDate = borrowDate;
         this.returnDate = returnDate;
     }
-    public Borrow(int id, Student student, Book book, Date borrowDate) {
-        this.id = id;
+
+    public Borrow(Student student, Book book, Date borrowDate, Date returnDate) {
         this.student = student;
         this.book = book;
         this.borrowDate = borrowDate;
+        this.returnDate = returnDate;
     }
 
     // Getters et Setters

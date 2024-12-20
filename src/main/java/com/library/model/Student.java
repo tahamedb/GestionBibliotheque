@@ -3,18 +3,27 @@ package com.library.model;
 public class Student {
     private int id;
     private String name;
+    private String email;
+
 
     // Constructeur par défaut
     public Student() {
-    }
-    public Student(String name){
-        this.name = name;
     }
 
     // Constructeur complet
     public Student(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public Student(int i, String alice, String mail) {
+        this.id=i;
+        this.name=alice;
+        this.email=mail;
     }
 
     // Getters et Setters
@@ -32,5 +41,13 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
