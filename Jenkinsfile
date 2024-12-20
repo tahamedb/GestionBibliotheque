@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/tahamedb/GestionBibliotheque.git'
+                git url:'https://github.com/tahamedb/GestionBibliotheque.git' , branch:'main'
             }
         }
         stage('Build') {
